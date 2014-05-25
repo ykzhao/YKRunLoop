@@ -10,6 +10,11 @@
 		CAADC3401931C7CD000EEFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADC33F1931C7CD000EEFC4 /* Foundation.framework */; };
 		CAADC3461931C7CD000EEFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAADC3441931C7CD000EEFC4 /* InfoPlist.strings */; };
 		CAADC34A1931C7CD000EEFC4 /* YKRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC3491931C7CD000EEFC4 /* YKRunLoop.m */; };
+		CAADC3521931C7FF000EEFC4 /* YKRunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CAADC3501931C7FF000EEFC4 /* YKRunLoopSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAADC3531931C7FF000EEFC4 /* YKRunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC3511931C7FF000EEFC4 /* YKRunLoopSource.m */; };
+		CAADC3541931C81F000EEFC4 /* YKRunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = CAADC3481931C7CD000EEFC4 /* YKRunLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAADC3571931CA72000EEFC4 /* YKRunLoopObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = CAADC3551931CA72000EEFC4 /* YKRunLoopObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAADC3581931CA72000EEFC4 /* YKRunLoopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADC3561931CA72000EEFC4 /* YKRunLoopObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,10 @@
 		CAADC3471931C7CD000EEFC4 /* YKRunLoop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YKRunLoop-Prefix.pch"; sourceTree = "<group>"; };
 		CAADC3481931C7CD000EEFC4 /* YKRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKRunLoop.h; sourceTree = "<group>"; };
 		CAADC3491931C7CD000EEFC4 /* YKRunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKRunLoop.m; sourceTree = "<group>"; };
+		CAADC3501931C7FF000EEFC4 /* YKRunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKRunLoopSource.h; sourceTree = "<group>"; };
+		CAADC3511931C7FF000EEFC4 /* YKRunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKRunLoopSource.m; sourceTree = "<group>"; };
+		CAADC3551931CA72000EEFC4 /* YKRunLoopObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKRunLoopObserver.h; sourceTree = "<group>"; };
+		CAADC3561931CA72000EEFC4 /* YKRunLoopObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKRunLoopObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,10 @@
 			children = (
 				CAADC3481931C7CD000EEFC4 /* YKRunLoop.h */,
 				CAADC3491931C7CD000EEFC4 /* YKRunLoop.m */,
+				CAADC3501931C7FF000EEFC4 /* YKRunLoopSource.h */,
+				CAADC3511931C7FF000EEFC4 /* YKRunLoopSource.m */,
+				CAADC3551931CA72000EEFC4 /* YKRunLoopObserver.h */,
+				CAADC3561931CA72000EEFC4 /* YKRunLoopObserver.m */,
 				CAADC3421931C7CD000EEFC4 /* Supporting Files */,
 			);
 			path = YKRunLoop;
@@ -86,6 +99,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAADC3541931C81F000EEFC4 /* YKRunLoop.h in Headers */,
+				CAADC3521931C7FF000EEFC4 /* YKRunLoopSource.h in Headers */,
+				CAADC3571931CA72000EEFC4 /* YKRunLoopObserver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAADC3531931C7FF000EEFC4 /* YKRunLoopSource.m in Sources */,
 				CAADC34A1931C7CD000EEFC4 /* YKRunLoop.m in Sources */,
+				CAADC3581931CA72000EEFC4 /* YKRunLoopObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +281,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -282,6 +301,7 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
